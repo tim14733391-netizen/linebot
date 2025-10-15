@@ -10,13 +10,13 @@ app = Flask(__name__)
 
 # 
 cloudinary.config(
-    cloud_name=os.getenv("dzggyowch"),
-    api_key=os.getenv("274937855242792"),
-    api_secret=os.getenv("nhgd_egk0ymYcOYBKvOvvGvP5Wg")
+    cloud_name=os.getenv"dzggyowch",
+    api_key=os.getenv"274937855242792",
+    api_secret=os.getenv"nhgd_egk0ymYcOYBKvOvvGvP5Wg"
 )
 
-CHANNEL_ACCESS_TOKEN = os.getenv("9TXCvsiRkR6VIonHZGor0TxisiZtkKLIH2UVbiiopK7KSSgNOC/4EVaWb3L8ZuqpkanRwx6zPHFKJIQW4wg2d2MWDPJYG/ztzbFGG6U2kDW3Dp9AtBMXH7dsmCv0qxmrJP0+JsKeZejnfKs/h9ISCAdB04t89/1O/w1cDnyilFU=")
-USER_ID = os.getenv("U64f8cb23dc9efd731fdc1d7b144cc38b")
+CHANNEL_ACCESS_TOKEN = os.getenv"9TXCvsiRkR6VIonHZGor0TxisiZtkKLIH2UVbiiopK7KSSgNOC/4EVaWb3L8ZuqpkanRwx6zPHFKJIQW4wg2d2MWDPJYG/ztzbFGG6U2kDW3Dp9AtBMXH7dsmCv0qxmrJP0+JsKeZejnfKs/h9ISCAdB04t89/1O/w1cDnyilFU="
+USER_ID = os.getenv"U64f8cb23dc9efd731fdc1d7b144cc38b"
 
 @app.route('/')
 def home():
@@ -96,6 +96,7 @@ def push_message():
         # 將完整錯誤顯示於 logs
         print("ERROR in /push:", repr(e))
         return jsonify({"ok": False, "error": str(e)}), 500
+
 
 
 
